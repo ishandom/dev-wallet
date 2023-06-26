@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <title>DevWallet</title>
+    
+  </head>
+  <body>
+      
+    <header class="container">
+      <img id="logo" src="./imgs/logo.svg" alt="DevWallet" />
+      <div>
+        <i data-feather="search"></i>
+        <img
+          id="perfil"
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt="jovem"
+        />
+      </div>
+    </header>
+    <div class="container" id="detalhes">
+        <div class="card">
+            <div>
+                <h2>Total em caixa</h2>
+                <i data-feather="eye"></i>
+            </div>
+            <h3>R$ 9.000,00</h3>
+        </div>
+        <div class="card">
+            <div>
+                <h2>Entradas</h2>
+                <i data-feather="arrow-up-circle" id="in"></i>
+            </div>
+            <h3>R$ 15.000,00</h3>
+        </div>
+        <div class="card">
+            <div>
+                <h2>Saidas</h2>
+                <i data-feather="arrow-down-circle" id="out"></i>
+            </div>
+            <h3>R$ 2.400,00</h3>
+        </div>
+
+    </div>
+    <main>
+        <div id="separation" class="container">
+            <div id="left">
+                <div class="title">
+                    <h2>Transações recentes</h2>
+                    <a href="#">Exibir Todas</a>
+                </div>
+            </div>
+            <div id="right">
+                <div class="title">
+                    <h2>Cotações</h2> 
+                    <a href="">Exibir Todas</a>
+                </div>
+            </div>
+        </div>
+        <div id="transactions">
+            <div class="transactions">
+                <i data-feather="dollar-sign"></i>
+                <h3>Salário Programador</h3>
+                <span>R$6.000,00</span>
+            </div>
+        </div>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
